@@ -4,14 +4,80 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>blogs</title>
+    <link rel="icon" href="<%= BASE_URL %>001.ico">
+    <title>随笔</title>
+    <meta name="description" content="An Rui的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动，静静寻觅生活的美好">
+    <style type="text/css">
+    #Loading {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 100;
+}
+
+@-webkit-keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ball-beat>div {
+  background-color: rgb(102, 204, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 100% !important;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  -webkit-animation: ball-beat 0.7s 0s infinite linear;
+  animation: ball-beat 0.7s 0s infinite linear;
+}
+
+.ball-beat>div:nth-child(2n-1) {
+  -webkit-animation-delay: 0.35s !important;
+  animation-delay: 0.35s !important;
+}
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but blogs doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>本站大量使用 JavaScript 技术，请确保您的浏览器打开了 JavaScript 支持，谢谢。</strong>
     </noscript>
+    <div id="Loading">
+      <div class="loader-inner ball-beat">
+         <div></div>
+         <div></div>
+         <div></div>
+       </div>
+  </div>
+   
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
   </body>
 </html>

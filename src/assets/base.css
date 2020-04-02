@@ -1,0 +1,14 @@
+html,body,#app{
+  margin:0;
+  padding: 0;
+  height: 100%;
+}
+/* body{ */
+  /* background: #fafafa url(./mbg1.jpg) no-repeat fixed; */
+  /* background: fafafa;
+  -webkit-perspective: 5420px;
+  background: rgba(246, 246, 246,0.8);
+} */
+.el-message-box{
+  width: 312px !important;
+}

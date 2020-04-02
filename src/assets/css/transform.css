@@ -1,0 +1,31 @@
+.bottom_top1{
+  opacity: 0;
+  animation: translatey 2s linear;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes translatey {
+  0% {
+    opacity: 0.1;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.bottom_top2{
+  animation: translatey 2s linear .2s;
+  /* animation-fill-mode: forwards; */
+}
+
+.bottom_top3{
+  animation: translatey 2s linear .4s;
+  /* animation-fill-mode: forwards; */
+}
+
+
+.bottom_top4{
+  animation: translatey 2s linear .6s;
+  /* animation-fill-mode: forwards; */
+}
